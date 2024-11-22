@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { fetchRecommendations } from "../utils/spotifyApi";
 
 const RecommendationList = () => {
   const [tracks, setTracks] = useState([]);
   const [playingTrack, setPlayingTrack] = useState(null); // Track currently being played
   const audioRef = React.useRef(null);
+  const navigate = useNavigate(); // Hook for navigation
 
   useEffect(() => {
     const fetchTracks = async () => {
@@ -55,6 +57,10 @@ const RecommendationList = () => {
           </li>
         ))}
       </ul>
+      {/* Back Button */}
+      <button className="btn-back" onClick={() => navigate("/")}>
+        Back to Preferences
+      </button>
     </div>
   );
 };

@@ -93,14 +93,15 @@ export const fetchArtistSpotlights = async () => {
     const response = await axiosInstance.get(
       "/search?q=genre:reggaeton&type=artist&limit=10"
     );
+    console.log("Spotify API Response:", response.data); // Debugging
     return response.data.artists.items.map((artist) => ({
       id: artist.id,
       name: artist.name,
-      image: artist.images[0]?.url, // Artist image
+      image: artist.images[0]?.url || "https://via.placeholder.com/100",
     }));
   } catch (error) {
     console.error(
-      "Error fetching artists:",
+      "Error fetching artist data:",
       error.response?.data || error.message
     );
     return [];

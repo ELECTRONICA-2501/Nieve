@@ -13,11 +13,15 @@ const Onboarding = () => {
     navigate("/recommendations", { state: { preference } });
   };
 
+  const goToArtistSpotlight = () => {
+    navigate("/artists");
+  };
+
   return (
-    <div className="container mt-5">
+    <div className="container">
       <p>Select your preference:</p>
       <select
-        className="form-select mb-3"
+        className="form-select"
         value={preference}
         onChange={(e) => setPreference(e.target.value)}
       >
@@ -27,9 +31,14 @@ const Onboarding = () => {
         <option value="party">Party Vibes</option>
         <option value="romantic">Romantic</option>
       </select>
-      <button className="btn btn-primary" onClick={handleSubmit}>
-        Discover
-      </button>
+      <div className="button-group">
+        <button className="btn-discover" onClick={handleSubmit}>
+          <i className="fas fa-music"></i> Discover
+        </button>
+        <button className="btn-spotlight" onClick={goToArtistSpotlight}>
+          <i className="fas fa-user"></i> Go to Artist Spotlight
+        </button>
+      </div>
     </div>
   );
 };
