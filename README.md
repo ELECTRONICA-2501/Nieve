@@ -15,12 +15,12 @@ Welcome to **Reggaeton Discovery**, a React-based web application that allows us
 
 ## Built With 🛠️
 
-- **React**: For building the interactive UI.
-- **Vite**: For fast builds and local development.
-- **Spotify API**: For fetching music recommendations, album covers, and artist data.
-- **Sass (SCSS)**: For styling the application with clean, maintainable code.
-- **Axios**: For making API calls to Spotify.
-- **React Router**: For seamless navigation between pages.
+- [![React][React.js]][React-url]
+- [![Vite][Vite-shield]][Vite-url]
+- [![JavaScript][JavaScript-shield]][JavaScript-url]
+- [![CSS][CSS-shield]][CSS-url]
+- [![Spotify API][Spotify-shield]][Spotify-url]
+- [![Axios][Axios-shield]][Axios-url]
 
 ---
 
@@ -121,3 +121,33 @@ Follow these steps to run the project on your local machine:
 ├── package.json         # Project dependencies
 ├── README.md            # Documentation
 ```
+
+<!-- React -->
+
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://reactjs.org/
+
+<!-- Vite -->
+
+[Vite-shield]: https://img.shields.io/badge/Vite-646CFF.svg?style=for-the-badge&logo=vite&logoColor=FFD62E
+[Vite-url]: https://vitejs.dev/
+
+<!-- JavaScript -->
+
+[JavaScript-shield]: https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black
+[JavaScript-url]: https://www.javascript.com/
+
+<!-- CSS -->
+
+[CSS-shield]: https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white
+[CSS-url]: https://developer.mozilla.org/en-US/docs/Web/CSS
+
+<!-- Spotify -->
+
+[Spotify-shield]: https://img.shields.io/badge/Spotify-1DB954?style=for-the-badge&logo=spotify&logoColor=white
+[Spotify-url]: https://developer.spotify.com/documentation/web-api/
+
+<!-- Axios -->
+
+[Axios-shield]: https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white
+[Axios-url]: https://axios-http.com/
