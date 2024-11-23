@@ -1,4 +1,4 @@
-# Reggaeton Discovery App 🎵
+![Welcome](images/Welcome.png)
 
 Welcome to **Reggaeton Discovery**, a React-based web application that allows users to explore reggaeton music recommendations, discover trending artists, and preview tracks directly from Spotify.
 
@@ -63,39 +63,78 @@ Follow these steps to run the project on your local machine:
 
 6. After the web app has launched, you should be able to pick preview the recommended tracks from your the given reggaeton genres! Enjoy!
 
-## How It Works ⚙️
+# Project Structure and Features
 
-1. **API Integration**:
+## 📂 Project Structure
 
-   - The app integrates with the Spotify API to fetch music recommendations, album covers, and artist information.
-   - Environment variables (`.env`) are used to securely store the API keys, which are injected during the build process to keep sensitive information safe.
-   - Axios is used for making API requests, providing a clean and reusable structure for API calls.
+### HTML Document
 
-2. **Routing**:
+- **`index.html`**:
+  - Serves as the entry point for the app in a Vite project.
+  - Typically not modified directly in React projects unless global configurations, third-party scripts, or extra metadata are required.
+  - **Note**: This project doesn't actively use or modify this file.
 
-   - React Router is used to manage navigation between different sections of the application.
-   - The app includes routes for:
-     - **Home Page**: Onboarding and genre selection.
-     - **Recommendations Page**: List of recommended tracks based on the user’s selected genre.
-     - **Artist Spotlight Page**: Display of popular reggaeton artists.
+---
 
-3. **Dynamic Content**:
+### 🎨 Styling (`Main.scss`)
 
-   - Tracks and artist information are dynamically rendered based on data fetched from the Spotify API.
-   - Each track displays the album cover, title, artist name, and a button to play a 15-second preview (if available).
-   - Artist pages showcase their profile pictures and additional details.
+- **SCSS** is used for modular and reusable styles:
+  - **Modern Design Enhancements**:
+    - **SVG Background Graphics**: Adds visual appeal.
+    - **Responsive Components**: Adjust seamlessly to different screen sizes.
+    - **Hover Effects**: Enhance user interaction for buttons and other elements.
+- Styled elements include:
+  - Buttons with smooth hover effects.
+  - Dynamic layouts for track and artist sections.
 
-4. **Styling**:
+---
 
-   - SCSS is used for modular and reusable styling.
-   - A modern design is achieved with:
-     - SVG background graphics for aesthetic appeal.
-     - Responsively styled components that adapt to different screen sizes.
-   - Buttons and interactive elements include hover effects for enhanced user experience.
+## 🎵 API Integration with Spotify
 
-5. **Performance Optimizations**:
-   - The app uses Vite for fast builds and optimized performance in production.
-   - Only necessary data is fetched and displayed to minimize unnecessary API calls and enhance page responsiveness.
+### **Endpoints Used**:
+
+1. **`/recommendations`**: Fetches recommended tracks.
+2. **`/search`**: Retrieves artists in the reggaeton genre.
+3. **`/artists/{id}/top-tracks`**: Fetches top tracks for a specific artist (not actively used).
+
+These endpoints power:
+
+- Track Recommendations.
+- Artist Spotlight.
+- Potential Artist-Specific Features.
+
+### **Key Features**:
+
+- **Secure API Key Management**:
+  - API keys are stored in a `.env` file and injected during the build process to protect sensitive information.
+- **Axios**:
+  - Simplifies API requests with a reusable and clean structure.
+  - Ensures robust error handling and token management.
+
+---
+
+## 📜 React Files and Functionality
+
+### React Router:
+
+- Manages navigation between different sections.
+- **Routes** include:
+  1. **Home Page**:
+     - Onboarding with genre selection.
+  2. **Recommendations Page**:
+     - Displays a curated list of tracks based on user preference.
+  3. **Artist Spotlight Page**:
+     - Showcases popular reggaeton artists with profile pictures and links to their Spotify profiles.
+
+---
+
+### 🛠️ Dynamic Content:
+
+- Tracks and artist information are fetched dynamically using the Spotify API.
+- **Tracks**:
+  - Display album cover, title, artist name, and a button to play a 15-second preview (if available).
+- **Artist Spotlight**:
+  - Showcases artist profiles with images, names, and links to their Spotify pages.
 
 ---
 
