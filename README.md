@@ -52,25 +52,42 @@ Follow these steps to run the project on your local machine:
    create a .env file in your root directory
    The information should look like this but with your own Spotify Client ID & Client Secret. If you dont know how to get these, follow the following steps below, if or once you have them, proceed to step 4.
 
-How to Create Your Spotify Client ID and Client Secret
+### How to Create Your Spotify Client ID and Client Secret
 
-To use the Reggaeton Discovery app, you’ll need a Spotify Client ID and Client Secret. Follow these steps to create them:
-	1.	Create a Spotify Developer Account:
-	•	Go to the Spotify for Developers Dashboard.
-	•	Log in with your Spotify account or create a new one if you don’t have an account.
-	2.	Create a New App:
-	•	Once logged in, click the Create an App button.
-	•	Fill in the details:
-	•	App Name: Enter a name for your app, such as “Reggaeton Discovery”.
-	•	App Description: Provide a brief description (e.g., “An app for discovering reggaeton music”).
-	•	Agree to the Spotify Developer Terms of Service and click Create.
-	3.	View Your App’s Client ID and Client Secret:
-	•	After creating the app, you’ll be redirected to the app’s dashboard.
-	•	Here, you’ll see your Client ID. Click on Show Client Secret to view your Client Secret.
-	•	Important: Copy these values; you’ll need them for the .env file.
-	4.	Set Redirect URIs:
-	•	In your app dashboard, scroll down to the Redirect URIs section and click Edit Settings.
-	•	Add a redirect URI that matches your app’s requirements. For example:
+To use the **Reggaeton Discovery** app, you'll need a Spotify Client ID and Client Secret. Follow these steps to create them:
+
+	1. **Create a Spotify Developer Account**:
+   - Go to the [Spotify for Developers Dashboard](https://developer.spotify.com/dashboard/).
+   - Log in with your Spotify account or create a new one if you don't have an account.
+
+	2. **Create a New App**:
+   - Once logged in, click the **Create an App** button.
+   - Fill in the details:
+     - **App Name**: Enter a name for your app, such as "Reggaeton Discovery".
+     - **App Description**: Provide a brief description (e.g., "An app for discovering reggaeton music").
+   - Agree to the Spotify Developer Terms of Service and click **Create**.
+
+	3. **View Your App's Client ID and Client Secret**:
+   - After creating the app, you'll be redirected to the app's dashboard.
+   - Here, you’ll see your **Client ID**. Click on **Show Client Secret** to view your Client Secret.
+   - **Important**: Copy these values; you'll need them for the `.env` file.
+
+	4. **Set Redirect URIs**:
+   - In your app dashboard, scroll down to the **Redirect URIs** section and click **Edit Settings**.
+   - Add a redirect URI that matches your app's requirements. For example:
+     ```
+     http://localhost:3000/callback
+     ```
+   - Click **Save**.
+
+5. **Add the Client ID and Client Secret to Your Project**:
+   - In the root directory of the project, create a `.env` file (if it doesn’t already exist).
+   - Add the following lines to the file, replacing `your_client_id` and `your_client_secret` with your actual values:
+     ```env
+     VITE_SPOTIFY_CLIENT_ID=your_client_id
+     VITE_SPOTIFY_CLIENT_SECRET=your_client_secret
+     VITE_SPOTIFY_REDIRECT_URI=http://localhost:3000/callback
+     ```
 
 4. Run the Dev server:
    ```bash
