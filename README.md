@@ -56,23 +56,23 @@ Follow these steps to run the project on your local machine:
 
 To use the **Reggaeton Discovery** app, you'll need a Spotify Client ID and Client Secret. Follow these steps to create them:
 
-	1. **Create a Spotify Developer Account**:
+Create a Spotify Developer Account:
    - Go to the [Spotify for Developers Dashboard](https://developer.spotify.com/dashboard/).
    - Log in with your Spotify account or create a new one if you don't have an account.
 
-	2. **Create a New App**:
+Create a New App:
    - Once logged in, click the **Create an App** button.
    - Fill in the details:
      - **App Name**: Enter a name for your app, such as "Reggaeton Discovery".
      - **App Description**: Provide a brief description (e.g., "An app for discovering reggaeton music").
    - Agree to the Spotify Developer Terms of Service and click **Create**.
 
-	3. **View Your App's Client ID and Client Secret**:
+View Your App's Client ID and Client Secret:
    - After creating the app, you'll be redirected to the app's dashboard.
    - Here, you’ll see your **Client ID**. Click on **Show Client Secret** to view your Client Secret.
    - **Important**: Copy these values; you'll need them for the `.env` file.
 
-	4. **Set Redirect URIs**:
+Set Redirect URIs:
    - In your app dashboard, scroll down to the **Redirect URIs** section and click **Edit Settings**.
    - Add a redirect URI that matches your app's requirements. For example:
      ```
