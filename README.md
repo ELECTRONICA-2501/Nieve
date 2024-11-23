@@ -34,6 +34,7 @@ Follow these steps to run the project on your local machine:
 2. **Git**: Ensure Git is installed on your machine.
 3. **Spotify Developer Account**: You’ll need a Spotify API key. Sign up at [Spotify for Developers](https://developer.spotify.com/) and create an app to get the `client_id` and `client_secret`.
 
+
 ---
 
 ### Steps to Run Locally
@@ -51,6 +52,26 @@ Follow these steps to run the project on your local machine:
    create a .env file in your root directory
    The information should look like this but with your own Spotify Client ID & Client Secret. If you dont know how to get these, follow the following steps below, if or once you have them, proceed to step 4.
 
+How to Create Your Spotify Client ID and Client Secret
+
+To use the Reggaeton Discovery app, you’ll need a Spotify Client ID and Client Secret. Follow these steps to create them:
+	1.	Create a Spotify Developer Account:
+	•	Go to the Spotify for Developers Dashboard.
+	•	Log in with your Spotify account or create a new one if you don’t have an account.
+	2.	Create a New App:
+	•	Once logged in, click the Create an App button.
+	•	Fill in the details:
+	•	App Name: Enter a name for your app, such as “Reggaeton Discovery”.
+	•	App Description: Provide a brief description (e.g., “An app for discovering reggaeton music”).
+	•	Agree to the Spotify Developer Terms of Service and click Create.
+	3.	View Your App’s Client ID and Client Secret:
+	•	After creating the app, you’ll be redirected to the app’s dashboard.
+	•	Here, you’ll see your Client ID. Click on Show Client Secret to view your Client Secret.
+	•	Important: Copy these values; you’ll need them for the .env file.
+	4.	Set Redirect URIs:
+	•	In your app dashboard, scroll down to the Redirect URIs section and click Edit Settings.
+	•	Add a redirect URI that matches your app’s requirements. For example:
+
 4. Run the Dev server:
    ```bash
        npm run build
@@ -61,7 +82,7 @@ Follow these steps to run the project on your local machine:
 
    http://localhost:3000/
 
-6. After the web app has launched, you should be able to pick preview the recommended tracks from your the given reggaeton genres! Enjoy!
+7. After the web app has launched, you should be able to pick preview the recommended tracks from your the given reggaeton genres! Enjoy!
 
 # Project Structure and Features
 
