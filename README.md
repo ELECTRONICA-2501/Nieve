@@ -76,9 +76,9 @@ Set Redirect URIs:
    - In your app dashboard, scroll down to the **Redirect URIs** section and click **Edit Settings**.
    - Add a redirect URI that matches your app's requirements. For example:
      ```
-     http://localhost:3000/callback
+     http://localhost:3000/
      ```
-   - Click **Save**.
+   - Click **Save**. NOTE: If you get lost in where to put your .env files, refer to the files structure at the bottom of this README page for an overview of how your project should look, your .env files should be in the same level as your root project. This project uses vite injection to safegaurd public API keys. 
 
 5. **Add the Client ID and Client Secret to Your Project**:
    - In the root directory of the project, create a `.env` file (if it doesn’t already exist).
@@ -86,7 +86,7 @@ Set Redirect URIs:
      ```env
      VITE_SPOTIFY_CLIENT_ID=your_client_id
      VITE_SPOTIFY_CLIENT_SECRET=your_client_secret
-     VITE_SPOTIFY_REDIRECT_URI=http://localhost:3000/callback
+     
      ```
 
 4. Run the Dev server:
